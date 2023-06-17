@@ -14,11 +14,9 @@ pipeline {
         }
 
         stage('Build Docker Images') {
-            stage('Build frontend-service image') {
-                    steps {
-                        sh "docker build -t $DOCKER_REGISTRY/split-bill-react-frontend-service ."
-                    }
-                }
+            steps {
+                sh "docker build -t $DOCKER_REGISTRY/split-bill-react-frontend-service ."
+            }
         }
 
         stage('Deploy My Services to Kubernetes') {
