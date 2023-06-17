@@ -1,0 +1,34 @@
+.expense-party {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #e4be9e;
+  border-radius: 20px;
+  border: 1px solid white;
+  flex-wrap: nowrap; /* ensure the flexbox doesn't wrap */
+}
+.expense-name {
+  display: flex;
+  justify-content: space-around;
+  flex: 1; /* allow this div to grow if needed */
+  min-width: 0; /* allow this div to shrink if needed */
+  overflow: hidden; /* hide content that doesn't fit */
+}
+h3 {
+  color: white;
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide content that doesn't fit */
+  text-overflow: ellipsis; /* add ellipsis for overflowed text */
+}
+
+.deleteBill {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .expense-name h3 {
+    font-size: 16px;
+  }
+}

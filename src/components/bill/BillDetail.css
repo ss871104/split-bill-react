@@ -1,0 +1,19 @@
+.BillDetail{
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: #fbd266;
+    align-items: center;
+    border: 1px solid white;
+
+}
+
+@media (max-width: 768px) {
+    .BillDetail {
+      width: 4rem;
+      height: 4rem;
+    }
+  }

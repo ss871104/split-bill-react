@@ -1,0 +1,45 @@
+.Head {
+  margin: auto;
+  height: auto;
+  padding: 30px;
+  background-color: #ff934f;
+  margin: auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Head-Welcome {
+  color: #fcddaf;
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  animation: text 5s ease-in-out infinite alternate;
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide content that doesn't fit */
+  text-overflow: ellipsis; /* add ellipsis for overflowed text */
+}
+.add-party-button {
+  margin-top: 3rem;
+}
+
+@keyframes text {
+  0%,
+  30% {
+    text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032,
+      15px 15px 0px #46b59b, 20px 20px 0px #017e7f, 25px 25px 0px #0d5370,
+      35px 35px 20px #1e1e25, 50px 50px 40px #131318;
+    transform: skewX(-20deg) skewY(1deg);
+  }
+  90%,
+  100% {
+    text-shadow: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Head-Welcome {
+    font-size: 3rem;
+  }
+}

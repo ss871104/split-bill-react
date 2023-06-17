@@ -1,0 +1,22 @@
+.box {
+  border: 3px solid;
+}
+
+.label-box {
+  background-color: #fbd266;
+}
+
+.bill-Type-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .text{
+    width: 8rem;
+  }
+  .addBill {
+    margin-top: 10px;
+  }
+}

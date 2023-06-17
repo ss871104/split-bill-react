@@ -1,0 +1,8 @@
+.Login-area{
+    display: flex;
+    flex-direction:column;
+    padding:10px;
+}
+.Login-box{
+    padding:10px;
+}

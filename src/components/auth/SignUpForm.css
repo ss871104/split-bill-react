@@ -1,0 +1,8 @@
+.SignUp-area{
+    display: flex;
+    flex-direction:column;
+    padding:10px;
+}
+.SignUp-box{
+    padding: 10px;
+}

@@ -1,0 +1,15 @@
+.expenses {
+  padding: 1rem;
+  background-color: #ff934f;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .expenses {
+    /* 在較小的螢幕上調整元素的大小和排列方式 */
+    padding: 1px;
+  }
+}

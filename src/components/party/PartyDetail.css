@@ -1,0 +1,45 @@
+.part-addBill-box {
+  display: flex;
+  justify-content: space-between;
+}
+.show-party-name {
+  color: white;
+}
+.party-top-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.party-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff; /* 字體顏色為白色 */
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background: #ffccaa;
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide content that doesn't fit */
+  text-overflow: ellipsis; /* add ellipsis for overflowed text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowing 2s infinite; /* 添加一個名為 glowing 的動畫效果 */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #ff934f; /* 初始陰影 */
+  }
+  50% {
+    text-shadow: 0 0 20px #ffccaa; /* 中間陰影 */
+  }
+  100% {
+    text-shadow: 0 0 10px #ff934f; /* 結束陰影 */
+  }
+}
+
+@media (max-width: 768px) {
+  .party-name {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}

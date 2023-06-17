@@ -1,0 +1,16 @@
+.admin_head {
+    margin: auto;
+    height: auto;
+    padding: 30px;
+    background-color: #FF934F;
+    margin: auto;
+    width: 100%;
+    max-width: 75%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
