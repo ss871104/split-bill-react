@@ -28,7 +28,7 @@ const ShowMemberInParty = (props) => {
         },
       })
       .then((res) => {
-        const newInviteUrl = `http://${ip_address}/split-bill/AddMemberPage?inviteId=${res.data}`;
+        const newInviteUrl = `http://${ip_address}/AddMemberPage?inviteId=${res.data}`;
         setInviteUrl(newInviteUrl);
         navigator.clipboard.writeText(newInviteUrl).then(() => {
           window.alert(`Copy "${newInviteUrl}" in clipboard!`);

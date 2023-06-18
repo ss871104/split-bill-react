@@ -10,10 +10,10 @@ import { useLocation } from "react-router-dom";
 const App = () => {
   return (
     <Routes>
-      <Route path="/split-bill" element={<WelcomePage />} />
-      <Route path="/split-bill/HomePage" element={<HomePage />} />
-      <Route path="/split-bill/AdminPage" element={<AdminPage />} />
-      <Route path="/split-bill/AddMemberPage" element={<AddMember />} />
+      <Route path="/" element={<WelcomePage />} />
+      <Route path="/HomePage" element={<HomePage />} />
+      <Route path="/AdminPage" element={<AdminPage />} />
+      <Route path="/AddMemberPage" element={<AddMember />} />
     </Routes>
   );
 }
