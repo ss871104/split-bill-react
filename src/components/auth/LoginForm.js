@@ -32,7 +32,7 @@ const LoginForm = () => {
         const getToken = res.data.token;
         localStorage.setItem("token", JSON.stringify(getToken));
         setAuthToken(getToken);
-        navigate("/split-bill/HomePage");
+        navigate("/HomePage");
       })
       .catch((err) => {
         if (err.response.data.message == null) {

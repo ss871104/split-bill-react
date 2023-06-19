@@ -33,7 +33,7 @@ function HomePage() {
         })
         .catch((err) => {
           alert("please login!");
-          navigate("/split-bill");
+          navigate("/");
         });
     }
   }, []);

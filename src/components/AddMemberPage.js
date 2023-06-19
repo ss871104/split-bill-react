@@ -10,7 +10,7 @@ const AddMemberPage = (props) => {
 
   useEffect(() => {
     if (!getData) {
-      navigate("/split-bill");
+      navigate("/");
     } else {
       const token = JSON.parse(getData);
       const api = `http://${ip_address}/master-query-service/api/user/info`;
@@ -30,16 +30,16 @@ const AddMemberPage = (props) => {
             })
             .then((res) => {
               alert("joined party!");
-              navigate("/split-bill/HomePage");
+              navigate("/HomePage");
             })
             .catch((err) => {
               alert(err.response.data.message);
-              navigate("/split-bill/HomePage");
+              navigate("/HomePage");
             });
         })
         .catch((err) => {
           alert("please login!");
-          navigate("/split-bill");
+          navigate("/");
         });
     }
   }, []);

@@ -38,7 +38,7 @@ const SignUpForm = () => {
         setAuthToken(res.data.token);
         localStorage.setItem("username", JSON.stringify(username));
         window.alert("register successfully!")
-        navigate("/split-bill/HomePage");
+        navigate("/HomePage");
       })
       .catch((err) => {
         if (err.response.data.message == null) {
