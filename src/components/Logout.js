@@ -21,7 +21,7 @@ const Logout = () => {
         })
         .then((res) => {
           alert("logout successfully!");
-          navigate("/split-bill");
+          navigate("/");
         })
         .catch((err) => {
           alert(err.response.data.message);
