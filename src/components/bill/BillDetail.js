@@ -83,7 +83,7 @@ const BillDetail = (props) => {
                 {list.map((item, index) => (
                   <tr key={index}>
                     <td style={{padding: "10px"}}>{map[item.memberId] ?? item.memberId}</td>
-                    <td style={{padding: "10px"}}>{item.billDetailType}</td>
+                    <td style={{padding: "10px"}}>{item.billDetailType == "INCOME" ? "Paid" : "Owed"}</td>
                     <td style={{padding: "10px"}}>$ {item.amount.toLocaleString()}</td>
                   </tr>
                 ))}
